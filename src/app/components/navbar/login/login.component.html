@@ -1,20 +1,26 @@
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+      <div class="wrapper">
+          <h2>Login</h2>
+          <hr>
+          <form #loginForm="ngForm" (submit)="onSubmitHandler(loginForm.value)">
 
+              <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="text" name="email" class="form-control" ngModel>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+              </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+              <div class="form-group">
+                  <label for="">Password</label>
+                  <input type="text" name="password" class="form-control" ngModel>
+              </div>
+              <input type="submit" value="Login" class="btn btn-primary btn-block">
+          </form>
+          <br>
+          <a routerLink="/register">New User? Click Here</a>
+      </div>
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-
+  <div class="col-lg-3"></div>
+</div>

@@ -13,6 +13,12 @@ import { category } from '../interfaces/categoryInt';
 })
 
 export class AuthService {
+  setCart(prodDet: any) {
+    throw new Error('Method not implemented.');
+  }
+  getCart(): any {
+    throw new Error('Method not implemented.');
+  }
 
 
 
